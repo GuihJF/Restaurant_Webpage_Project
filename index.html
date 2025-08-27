@@ -1,375 +1,498 @@
 <!DOCTYPE html>
 
+<!-- Language set to Brazilian Portuguese -->
 <html lang="pt-br">
   <head>
+    <!-- Character encoding for proper text rendering -->
     <meta charset="UTF-8" />
 
+    <!-- Responsive design settings for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Restaurante - Seja bem-vindo!</title>
+    <!-- Page title shown in browser tab -->
+    <title>Restaurant - Welcome!</title>
+
+    <!-- External stylesheets for layout and icons -->
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/fontawesome.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
+
   <body>
-    <!-- Aqui começa o menu no cabeçalho. -->
-    <section class="header">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg pl-0 pr-0">
-          <a class="navbar-brand" href="#">
-            <img src="/img/logo.png" width="160" class="img-logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNavDropdown"
-          >
-            <span class="navbar-toggler-icon">
-              <i class="fas fa-bars"></i>
-            </span>
-          </button>
-          <div class="collapse navbar-collapse" id="#navbarNavDropdown">
-            <ul class="navbar-nav ml-auto mr-auto">
-              <li class="nav-item">
-                <a href="#reservas" class="nav-link"><b>Reservas</b></a>
-              </li>
-              <li class="nav-item">
-                <a href="#reservas" class="nav-link"><b>Serviços</b></a>
-              </li>
-              <li class="nav-item">
-                <a href="#reservas" class="nav-link"><b>Cardápio</b></a>
-              </li>
-              <li class="nav-item">
-                <a href="#reservas" class="nav-link"><b>Depoimentos</b></a>
-              </li>
-            </ul>
-            <a class="btn btn-white btn-icon">
-              Meu Carrinho
-              <span class="icon">
-                <i class="fa fa-shopping-bag"></i>
-              </span>
-            </a>
-          </div>
-        </nav>
-      </div>
-    </section>
+<!-- Header menu section starts here -->
+<section class="header">
+  <div class="container">
+    <nav class="navbar navbar-expand-lg pl-0 pr-0">
+      <!-- Brand logo -->
+      <a class="navbar-brand" href="#">
+        <img src="/img/logo.png" width="160" class="img-logo"/>
+      </a>
 
-<!-- Sessão do Banner logo abaixo do do menu no cabeçalho -->
-    <section class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <div class="d-flex text-banner">
-              <h1>
-                <b>Escolha sua comida <b class="color-primary">favorita.</b></b>
-              </h1>
-              <p>
-                Aproveite o nosso cardápio! Escolha o que desejar e receba em
-                sua casa de forma rápida e segura.
-              </p>
-              <div>
-                <a class="btn btn-yellow mt-4 mr mr-3"> Ver carpápio </a>
-                <a href="#" class="btn btn-white btn-icon-left mt-4">
-                  <span class="icon-left">
-                    <i class="fa fa-phone"></i>
-                  </span>
-                  (17) 99168-6069
-                </a>
-              </div>
-            </div>
-            <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
-              <i class="fab fa-facebook"></i>
-            </a>
-            <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
-              <i class="fab fa-whatsapp"></i>
-              <a class="btn btn-sm btn-white btn-social mt-4 mr-3">
-                <i class="fab fa-tiktok"></i>
-            </a>
-          </div>
-          <div class="col-6">
-            <div class="card-banner"></div>
-            <div class="d-flex img-banner">
-              <img src="./img/burguer.png">
-            </div>
-            <div class="card card-case">"Entrega rápida e funcionarios simpáticos.
-              <br>A comida chegou quente e <br>muito saborosa!"
-              <span class="card-case-name">
-                <b>Thiago Lopes</b>
+      <!-- Mobile menu toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+      >
+        <span class="navbar-toggler-icon">
+          <i class="fas fa-bars"></i>
+        </span>
+      </button>
+
+      <!-- Navigation links -->
+      <div class="collapse navbar-collapse" id="#navbarNavDropdown">
+        <ul class="navbar-nav ml-auto mr-auto">
+          <li class="nav-item">
+            <a href="#reservas" class="nav-link"><b>Reservations</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#reservas" class="nav-link"><b>Services</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#reservas" class="nav-link"><b>Menu</b></a>
+          </li>
+          <li class="nav-item">
+            <a href="#reservas" class="nav-link"><b>Testimonials</b></a>
+          </li>
+        </ul>
+
+        <!-- Cart button -->
+        <a class="btn btn-white btn-icon">
+          My Cart
+          <span class="icon">
+            <i class="fa fa-shopping-bag"></i>
+          </span>
+        </a>
+      </div>
+    </nav>
+  </div>
+</section>
+
+<!-- Banner section just below the header menu -->
+<section class="banner">
+  <div class="container">
+    <div class="row">
+
+      <!-- Left column: banner text and buttons -->
+      <div class="col-6">
+        <div class="d-flex text-banner">
+          <h1>
+            <b>Choose your <b class="color-primary">favorite food.</b></b>
+          </h1>
+          <p>
+            Enjoy our menu! Choose what you want and receive it at home quickly and safely.
+          </p>
+          <div>
+            <a class="btn btn-yellow mt-4 mr mr-3"> View Menu </a>
+            <a href="#" class="btn btn-white btn-icon-left mt-4">
+              <span class="icon-left">
+                <i class="fa fa-phone"></i>
               </span>
-            </div>
+              (11) 99999-9999
+            </a>
           </div>
         </div>
+
+        <!-- Social media icons -->
+        <a class="btn btn-sm btn-white btn-social mr-3">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn btn-sm btn-white btn-social mr-3">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a class="btn btn-sm btn-white btn-social mr-3">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a class="btn btn-sm btn-white btn-social mr-3">
+          <i class="fab fa-tiktok"></i>
+        </a>
       </div>
-    </section>
 
-    <!-- Aqui começa a sessão dos Serviços na pagina-->
-    <section class="servicos" id="servicos">
-
-    <div class="background-servicos"></div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center mb-5">
-            <span class="hint-title"><b>Serviços</b></span>
-            <h1 class="title">
-               <b>Como são nossos serviços?</b>
-            </h1>
-          </div>
-
-          <div class="col-4 mb-5">
-            <div class="card-icon text-center">
-              <img src="./img/icone-pedido.svg" width="150"></div>
-              <div class="card-text text-center mt-3">
-                <p><b>Fácil de pedir</b></p>
-                <span>
-                  Você só precisa de alguns passos para pedir sua comida.
-                </span>
-              </div>
-            </div>
-
-          <div class="col-4 mb-5">
-            <div class="card-icon text-center">
-              <img src="./img/icone-delivery.svg" width="250"></div>
-              <div class="card-text text-center mt-3">
-                <p><b>Entrega rápida</b></p>
-                <span>Nossa entrega é sempre pontual, rápida e segura.</span>
-              </div>
-            </div>
-
-              <div class="col-4 mb-5">
-                <div class="card-icon text-center">
-                  <img src="./img/icone-qualidade.svg" width="250"></div>
-                  <div class="card-text text-center mt-3">
-                    <p><b>Melhor qualidade</b></p>
-                    <span>Não só a rapidez na entrega ,a qualidade também é o nosso forte.</span>
-                  </div>
-              </div>
-            </div>
-         </div>
-
-    </section>
-
-<!-- Aqui é onde começa a serssão do Cardapio do restaurante. -->
-      <section class="cardapio" id="cardapio">
-
-        <div class="background-cardapio"></div>
-
-        <div class="container">
-         <div class="row">
-
-          <div class="col-12 text-center mb-5">
-            <span class="hint-title"><b>Cardápio</b></span>
-            <h1 class="title">
-               <b>Conheça o nosso cardápio</b>
-            </h1>
-          </div>
-
-          <!-- Div com as opcões sobre os tipos de comida disponíveis -->
-          <div class="col-12 container-menu">
-            <!-- Icone de hamburguers nas opcoes do cardápio-->
-            <a class="btn btn-white btn-sm mr-3 active">
-              <i class="fas fa-hamburger"></i>&nbsp;Burguers
-            </a>
-             <!-- Icone de hamburguers nas opcoes do cardápio-->
-            <a class="btn btn-white btn-sm mr-3">
-              <i class="fas fa-pizza-slice"></i>&nbsp;Pizzas
-            </a>
-             <!-- Icone de hamburguers nas opcoes do cardápio-->
-            <a class="btn btn-white btn-sm mr-3">
-              <i class="fas fa-drumstick-bite"></i>&nbsp;Churrasco
-            </a>
-             <!-- Icone de hamburguers nas opcoes do cardápio-->
-            <a class="btn btn-white btn-sm mr-3">
-              <i class="fas fa-bacon"></i>&nbsp;Steaks
-            </a>
-             <!-- Icone de hamburguers nas opcoes do cardápio-->
-            <a class="btn btn-white btn-sm mr-3">
-              <i class="fas fa-cocktail"></i>&nbsp;Bebidas
-            </a>
-             <!-- Icone de hamburguers nas opcoes do cardápio-->
-            <a class="btn btn-white btn-sm mr-3">
-              <i class="fas fa-ice-cream"></i>&nbsp;Sobremesas
-            </a>
-          </div>  <!-- Fechamento da div com as opcões do cardápio-->
-
-          <!-- Div com a lista de produtos do cardápio -->
-            <div class="col-12">
-              <div class="row" id="itensCardapio">       
-
-          <!--Aqui está o primeiro produto do menu (Hamburguer) -->
-                <div class="col-3 mb-3">
-                  <div class="card card-item">
-                    <div class="img-produto">
-                      <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"/>
-                    </div>
-                      <p class="title-produto text-center mt-4">
-                      <b>Hamburguer</b>
-                    </p>
-                    <p class="price-produto text-center">
-                      <b>R$154,90</b>
-                    </p>
-                    <div class="add-carrinho">
-                    <span class="btn-menos"><i class="fas fa-minus"></i></span>
-                    <span class="btn-add-numero-itens">0</span>
-                    <span class="btn-mais"><i class="fas fa-plus"></i></span>
-                    <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
-                  </div>
-                </div>
-              </div> <!--Aqui termina o primeiro produto do menu -->
-
-              <!--Aqui está o segundo produto do menu (**) -->
-              <div class="col-3 mb-3">
-                <div class="card card-item">
-                  <div class="img-produto">
-                    <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"/>
-                  </div>
-                    <p class="title-produto text-center mt-4">
-                    <b>Hamburguer</b>
-                  </p>
-                  <p class="price-produto text-center">
-                    <b>R$154,90</b>
-                  </p>
-                  <div class="add-carrinho">
-                  <span class="btn-menos"><i class="fas fa-minus"></i></span>
-                  <span class="btn-add-numero-itens">0</span>
-                  <span class="btn-mais"><i class="fas fa-plus"></i></span>
-                  <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
-                </div>
-              </div>
-            </div> <!--Aqui termina o segundo produto do menu -->
-
-            <!--Aqui está o terceiro produto do menu (**) -->
-            <div class="col-3 mb-3">
-              <div class="card card-item">
-                <div class="img-produto">
-                  <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"/>
-                </div>
-                  <p class="title-produto text-center mt-4">
-                  <b>Hamburguer</b>
-                </p>
-                <p class="price-produto text-center">
-                  <b>R$154,90</b>
-                </p>
-                <div class="add-carrinho">
-                <span class="btn-menos"><i class="fas fa-minus"></i></span>
-                <span class="btn-add-numero-itens">0</span>
-                <span class="btn-mais"><i class="fas fa-plus"></i></span>
-                <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
-              </div>
-            </div>
-          </div> <!--Aqui termina o terceiro produto do menu -->
-
-          <!--Aqui está o quarto produto do menu (**) -->
-          <div class="col-3 mb-3">
-            <div class="card card-item">
-              <div class="img-produto">
-                <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"/>
-              </div>
-                <p class="title-produto text-center mt-4">
-                <b>Hamburguer</b>
-              </p>
-              <p class="price-produto text-center">
-                <b>R$154,90</b>
-              </p>
-              <div class="add-carrinho">
-              <span class="btn-menos"><i class="fas fa-minus"></i></span>
-              <span class="btn-add-numero-itens">0</span>
-              <span class="btn-mais"><i class="fas fa-plus"></i></span>
-              <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
-            </div>
-          </div>
-        </div> <!--Aqui termina o quarto produto do menu -->
-
-            </div>
-          </div>
-
-
-          <!-- Botao de ver mais no fim do cardapio-->
-          <div class="col-12 text-center"><a class="btn btn-white btn-sm">Ver mais</a>
-          </div> <!-- Fechamento do botao (Ver mais)-->
-
+      <!-- Right column: banner image and testimonial -->
+      <div class="col-6">
+        <div class="card-banner"></div>
+        <div class="d-flex img-banner">
+          <img src="./img/burguer.png">
+        </div>
+        <div class="card card-case">
+          "Fast delivery and friendly staff.
+          <br>The food arrived hot and <br>very tasty!"
+          <span class="card-case-name">
+            <b>Thiago Lopes</b>
+          </span>
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<!-- Services section starts here -->
+<section class="servicos" id="servicos">
+
+  <!-- Decorative background for the services section -->
+  <div class="background-servicos"></div>
+
+  <div class="container">
+    <div class="row">
+
+
+    <!-- Section header: Services -->
+    <div class="col-12 text-center mb-5">
+      <span class="hint-title"><b>Services</b></span>
+      <h1 class="title">
+        <b>How are our services?</b>
+      </h1>
+    </div>
+
+    <!-- First service card: Easy to order -->
+    <div class="col-4 mb-5">
+      <div class="card-icon text-center">
+        <img src="./img/icone-pedido.svg" width="150">
+      </div>
+      <div class="card-text text-center mt-3">
+        <p><b>Easy to order</b></p>
+        <span>
+          You only need a few steps to order your food.
+        </span>
+      </div>
+    </div>
+
+    <!-- Second service card: Fast delivery -->
+    <div class="col-4 mb-5">
+      <div class="card-icon text-center">
+        <img src="./img/icone-delivery.svg" width="250">
+      </div>
+      <div class="card-text text-center mt-3">
+        <p><b>Fast delivery</b></p>
+        <span>Our delivery is always on time, fast, and secure.</span>
+      </div>
+    </div>
+
+    <!-- Third service card: Best quality -->
+    <div class="col-4 mb-5">
+      <div class="card-icon text-center">
+        <img src="./img/icone-qualidade.svg" width="250">
+      </div>
+      <div class="card-text text-center mt-3">
+        <p><b>Best quality</b></p>
+        <span>Not only fast delivery — quality is also our strength.</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</section>
+
+
+<!-- Start of the restaurant menu section -->
+<section class="cardapio" id="cardapio">
+
+  <!-- Background styling for the menu area -->
+  <div class="background-cardapio"></div>
+
+  <div class="container">
+    <div class="row">
+
+      <!-- Section header: menu title and subtitle -->
+      <div class="col-12 text-center mb-5">
+        <span class="hint-title"><b>Menu</b></span>
+        <h1 class="title">
+          <b>Explore our menu</b>
+        </h1>
+      </div>
+
+
+<!-- Container with food category options -->
+<div class="col-12 container-menu">
+
+  <!-- Category button: Burgers (active by default) -->
+  <a class="btn btn-white btn-sm mr-3 active">
+    <i class="fas fa-hamburger"></i>&nbsp;Burguers
+  </a>
+
+  <!-- Category button: Pizzas -->
+  <a class="btn btn-white btn-sm mr-3">
+    <i class="fas fa-pizza-slice"></i>&nbsp;Pizzas
+  </a>
+
+  <!-- Category button: Barbecue -->
+  <a class="btn btn-white btn-sm mr-3">
+    <i class="fas fa-drumstick-bite"></i>&nbsp;Barbecue
+  </a>
+
+  <!-- Category button: Steaks -->
+  <a class="btn btn-white btn-sm mr-3">
+    <i class="fas fa-bacon"></i>&nbsp;Steaks
+  </a>
+
+  <!-- Category button: Drinks -->
+  <a class="btn btn-white btn-sm mr-3">
+    <i class="fas fa-cocktail"></i>&nbsp;Drinks
+  </a>
+
+  <!-- Category button: Desserts -->
+  <a class="btn btn-white btn-sm mr-3">
+    <i class="fas fa-ice-cream"></i>&nbsp;Desserts
+  </a>
+
+</div> <!-- End of food category menu -->
+
+<!-- Container for the product list based on selected category -->
+<div class="col-12">
+  <div class="row" id="itensCardapio">
+       
+
+<!-- First product card in the menu (Hamburguer) -->
+<div class="col-3 mb-3">
+  <div class="card card-item">
+
+    <!-- Product image -->
+    <div class="img-produto">
+      <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"/>
+    </div>
+
+    <!-- Product title -->
+    <p class="title-produto text-center mt-4">
+      <b>Hamburguer</b>
+    </p>
+
+    <!-- Product price -->
+    <p class="price-produto text-center">
+      <b>R$34,90</b>
+    </p>
+
+    <!-- Quantity selector and add-to-cart button -->
+    <div class="add-carrinho">
+      <span class="btn-menos"><i class="fas fa-minus"></i></span>
+      <span class="btn-add-numero-itens">0</span>
+      <span class="btn-mais"><i class="fas fa-plus"></i></span>
+      <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
+    </div>
+
+  </div>
+</div> <!-- End of first product card -->
+
+
+<!-- Second product card in the menu -->
+<div class="col-3 mb-3">
+  <div class="card card-item">
+
+    <!-- Product image -->
+    <div class="img-produto">
+      <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"/>
+    </div>
+
+    <!-- Product title -->
+    <p class="title-produto text-center mt-4">
+      <b>Hamburguer</b>
+    </p>
+
+    <!-- Product price -->
+    <p class="price-produto text-center">
+      <b>R$28,90</b>
+    </p>
+
+    <!-- Quantity selector and add-to-cart button -->
+    <div class="add-carrinho">
+      <span class="btn-menos"><i class="fas fa-minus"></i></span>
+      <span class="btn-add-numero-itens">0</span>
+      <span class="btn-mais"><i class="fas fa-plus"></i></span>
+      <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
+    </div>
+
+  </div>
+</div> <!-- End of second product card -->
+
+
+<!-- Third product card in the menu -->
+<div class="col-3 mb-3">
+  <div class="card card-item">
+
+    <!-- Product image -->
+    <div class="img-produto">
+      <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"/>
+    </div>
+
+    <!-- Product title -->
+    <p class="title-produto text-center mt-4">
+      <b>Hamburguer</b>
+    </p>
+
+    <!-- Product price -->
+    <p class="price-produto text-center">
+      <b>R$24,90</b>
+    </p>
+
+    <!-- Quantity selector and add-to-cart button -->
+    <div class="add-carrinho">
+      <span class="btn-menos"><i class="fas fa-minus"></i></span>
+      <span class="btn-add-numero-itens">0</span>
+      <span class="btn-mais"><i class="fas fa-plus"></i></span>
+      <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
+    </div>
+
+  </div>
+</div> <!-- End of third product card -->
+
+
+<!-- Fourth product card in the menu -->
+<div class="col-3 mb-3">
+  <div class="card card-item">
+
+    <!-- Product image -->
+    <div class="img-produto">
+      <img src="./img/cardapio/burguers/burger-au-poivre-kit-4-pack.3ca0e39b02db753304cd185638dad518.jpg"/>
+    </div>
+
+    <!-- Product title -->
+    <p class="title-produto text-center mt-4">
+      <b>Hamburguer</b>
+    </p>
+
+    <!-- Product price -->
+    <p class="price-produto text-center">
+      <b>R$15,90</b>
+    </p>
+
+    <!-- Quantity selector and add-to-cart button -->
+    <div class="add-carrinho">
+      <span class="btn-menos"><i class="fas fa-minus"></i></span>
+      <span class="btn-add-numero-itens">0</span>
+      <span class="btn-mais"><i class="fas fa-plus"></i></span>
+      <span class="btn btn-add"><i class="fa fa-shopping-bag"></i></span>
+    </div>
+
+  </div>
+</div> <!-- End of fourth product card -->
+
+<!-- "See more" button at the end of the menu -->
+<div class="col-12 text-center">
+  <a class="btn btn-white btn-sm">See more</a>
+</div> <!-- End of "See more" button -->
+
+
     </section>
 
-    <!-- Aqui é onde começa a sessão de depoimentos da pagina -->
-    <section class="depoimentos" id="depoimentos">
+<!-- Start of the testimonials section -->
+<section class="depoimentos" id="depoimentos">
 
-      <div class="background-depoimentos"></div>
+  <!-- Background styling for the testimonials area -->
+  <div class="background-depoimentos"></div>
 
-      <div class="container">
-        <div class="row">
+  <div class="container">
+    <div class="row">
 
-          <div class="col-5 text-center">
-            <div class="card-depoimentos"></div>
-            <div class="d-flex img-banner">
-              <img src=".//img/pizzas.png">
-            </div>
-          </div>
+      <!-- Left column: testimonial card and banner image -->
+      <div class="col-5 text-center">
+        <div class="card-depoimentos"></div>
 
-          <div class="col-7">
-            <span class="hint-title"><b>Depoimentos</b></span>
-            <h1 class="title">
-              <b>Oque dizem sobre nós</b>
-            </h1>
-              <div class="mt-5">
+        <!-- Banner image (e.g., product or ambiance visual) -->
+        <div class="d-flex img-banner">
+          <img src=".//img/pizzas.png">
+        </div>
+      </div>
 
-                <!-- Aqui se inica a sessão de Depoimentos -->
-                  <div class="depoimento" id="depoimento-1">
-                    <div class="container-dados-depoimento">
-                      <div class="imagem-depoimento"></div>
-                      <div>
-                        <p class="nome-depoimento"><b>Guilherme Silva</b></p>
-                        <p class="nota-depoimento">
+      <!-- Right column: testimonial content will be inserted here -->
+      <div class="col-7">
 
-                          <!-- Icones das estrelas de avaliação -->
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star-half-alt"></i>&nbsp; <span>4.5</span>
-                        </p>
-                      </div>
-                    </div>
+  <!-- Section header for testimonials -->
+  <span class="hint-title"><b>Testimonials</b></span>
+  <h1 class="title">
+    <b>What do they say about us?</b>
+  </h1>
+  <div class="mt-5">
 
+    <!-- Start of the Testimonials section -->
+    <div class="depoimento" id="depoimento-1">
+      <div class="container-dados-depoimento">
+
+        <!-- Placeholder for user image -->
+        <div class="imagem-depoimento"></div>
+
+        <div>
+          <!-- Display user's name -->
+          <p class="nome-depoimento"><b>Guilherme Silva</b></p>
+
+          <!-- Display user's rating with star icons -->
+          <p class="nota-depoimento">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>&nbsp; <span>4.5</span>
+          </p>
+        </div>
+      </div>
+
+<!-- Testimonial text block with quote icons -->
+<p class="texto-depoimento">
+  <i class="fas fa-quote-left"></i>
+  <span>
+    Excellent, I highly recommend it! The chef prepares excellent food, provides quality service, and excellent customer service.
+  </span>
+  <i class="fas fa-quote-right"></i>
+</p>
+</div>
+
+ <a class="btn btn-sm btn-white btn-social active mr-3">1</a>
+              <a class="btn btn-sm btn-white btn-social mr-3">2</a>
+              <a class="btn btn-sm btn-white btn-social">3</a>
+
+<!-- Testimonial #2 (initially hidden) -->
+<div class="depoimento hidden" id="depoimento-2">
+  <div class="container-dados-depoimento">
+
+    <!-- Placeholder for user image -->
+    <div class="imagem-depoimento"></div>
+
+    <div>
+      <!-- Display user's name -->
+      <p class="nome-depoimento"><b>Ana Carolina</b></p>
+
+      <!-- Star rating icons with numerical score -->
+      <p class="nota-depoimento">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>&nbsp; <span>4.5</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Testimonial text block with quote icons -->
+  <p class="texto-depoimento">
+    <i class="fas fa-quote-left"></i>
+    <span>
+      The dinner was perfect from start to finish! The food, the experience, and the service were all wonderful!
+    </span>
+    <i class="fas fa-quote-right"></i>
+  </p>
+</div>
+
+<!-- Testimonial #3 (initially hidden) -->
+<div class="depoimento hidden" id="depoimento-3">
+  <div class="container-dados-depoimento">
+
+    <!-- Placeholder for user image -->
+    <div class="imagem-depoimento"></div>
+
+    <div>
+      <!-- Display user's name -->
+      <p class="nome-depoimento"><b>Arthur Santos</b></p>
+
+      <!-- Star rating icons will be added here -->
+      <p class="nota-depoimento">
+
+        <!-- Rating logic continues below -->
                     <p class="texto-depoimento">
                       <i class="fas fa-quote-left"></i>
                       <span>
-                        Ótimo, recomendo demais! Comida muito bem feita pelo chefe, atendimento de qualidade e boa comunicação com o cliente.
-                      </span>
-                      <i class="fas fa-quote-right"></i>
-                    </p>
-
-                  </div>
-
-                  <div class="depoimento hidden" id="depoimento-2">
-                    <div class="container-dados-depoimento">
-                      <div class="imagem-depoimento"></div>
-                      <div>
-                        <p class="nome-depoimento"><b>Ana Carolina</b></p>
-                        <p class="nota-depoimento">
-                          
-                          <!-- Icones das estrelas de avaliação -->
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star-half-alt"></i>&nbsp; <span>4.5</span>
-                        </p>
-                      </div>
-                    </div>
-
-                    <p class="texto-depoimento">
-                      <i class="fas fa-quote-left"></i>
-                      <span>
-                       O jantar estava perfeito do começo ao fim! Comida, experiência e serviço, tudo estava maravilhoso!
-                      </span>
+                        The dinner was perfect from start to finish! The food, the experience, and the service were all wonderful!                      </span>
                       <i class="fas fa-quote-right"></i>
                     </p>
 
@@ -379,52 +502,239 @@
                     <div class="container-dados-depoimento">
                       <div class="imagem-depoimento"></div>
                       <div>
-                        <p class="nome-depoimento"><b>Artur Santos</b></p>
+                        <p class="nome-depoimento"><b>Arthur Santos</b></p>
                         <p class="nota-depoimento">
                           
-                          <!-- Icones das estrelas de avaliação -->
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star-half-alt"></i>&nbsp; <span>4.5</span>
-                        </p>
-                      </div>
+                          <script>
+  document.addEventListener("DOMContentLoaded", function () {
+// Quantity control for each product card
+const cards = document.querySelectorAll(".card-item");
+
+cards.forEach(card => {
+  // Select the "+" and "−" buttons and the quantity display
+  const btnMais = card.querySelector(".btn-mais");
+  const btnMenos = card.querySelector(".btn-menos");
+  const contador = card.querySelector(".btn-add-numero-itens");
+
+        // Initialize item quantity
+        let quantidade = 0;
+
+        // Increase quantity when "+" button is clicked
+        btnMais.addEventListener("click", () => {
+          quantidade++;
+          contador.textContent = quantidade;
+        });
+
+        // Decrease quantity when "−" button is clicked (minimum 0)
+        btnMenos.addEventListener("click", () => {
+          if (quantidade > 0) {
+            quantidade--;
+            contador.textContent = quantidade;
+          }
+        });
+      });
+
+    // Switch between testimonials when a button is clicked
+    const botoes = document.querySelectorAll(".botao-depoimento");
+
+    botoes.forEach(botao => {
+      botao.addEventListener("click", () => {
+        // Get the testimonial number from the button's data attribute
+        const numero = botao.dataset.numero;
+
+        // Show the selected testimonial
+        mostrarDepoimento(numero);
+
+        // Remove 'ativo' class from all buttons
+        botoes.forEach(b => b.classList.remove("ativo"));
+
+        // Highlight the clicked button as active
+        botao.classList.add("ativo");
+      });
+    });
+
+              // Function to display the selected testimonial based on its number
+              function mostrarDepoimento(numero) {
+                // Remove 'ativo' class from all testimonial elements
+                const todos = document.querySelectorAll('.depoimento');
+                todos.forEach(el => el.classList.remove('ativo'));
+
+                // Add 'ativo' class to the selected testimonial
+                const selecionado = document.getElementById(`depoimento-${numero}`);
+                if (selecionado) {
+                  selecionado.classList.add('ativo');
+                }
+              }
+              </script>
+
+                    <!-- Navigation buttons to switch between testimonials -->
+                    <div class="botoes-depoimento">
+                      <button class="botao-depoimento ativo" data-numero="1">1</button>
+                      <button class="botao-depoimento" data-numero="2">2</button>
+                      <button class="botao-depoimento" data-numero="3">3</button>
                     </div>
 
-                    <p class="texto-depoimento">
-                      <i class="fas fa-quote-left"></i>
-                      <span>
-                        A comida estava excelente e o serviço gentil nos supreendeu!
-                        Dica: reservem umas 3 horas para ter uma experiencia incrível.
-                      </span>
-                      <i class="fas fa-quote-right"></i>
-                    </p>
+                            <!-- Star rating icons with numerical score -->
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>&nbsp; <span>4.5</span>
+                            </p>
+                            </div>
+                            </div>
 
-                  </div>
+                                <!-- Testimonial text with quote icons -->
+                                <p class="texto-depoimento">
+                                  <i class="fas fa-quote-left"></i>
+                                  <span>
+                                    The food was excellent and the friendly service blew us away!
+                                    Tip: Set aside about 3 hours for an incredible experience.
+                                  </span>
+                                  <i class="fas fa-quote-right"></i>
+                                </p>
 
-              </div>
+                                </div>
 
-              <a class="btn btn-sm btn-white btn-social active mr-3">1</a>
-              <a class="btn btn-sm btn-white btn-social mr-3">2</a>
-              <a class="btn btn-sm btn-white btn-social">3</a>
+                                </div>
 
-          </div>
+                                      <!-- Pagination buttons for navigating testimonial pages -->
+                                      <a class="btn btn-sm btn-white btn-social active mr-3">1</a>
+                                      <a class="btn btn-sm btn-white btn-social mr-3">2</a>
+                                      <a class="btn btn-sm btn-white btn-social">3</a>
 
-        </div>
-      </div>
-    </section>
+                                      </div>
 
-    <section class="reserva" id="reservas"></section>
+                                      </div>
+                                      </div>
+                                      </section>
 
-    <footer></footer>
 
-    <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="/js/modernizr-3.5.0.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/popper.min.js"></script>
+                                          <!-- Reservation Section -->
+                                        <section class="reserva" id="reservas">
+                                          <div class="container">
+                                            <div class="row">
+                                              <div class="col-12">
 
-  </body>
 
-</html>
+                                                <!-- Card container with padding for visual spacing -->
+                                                <div class="card-secondary p-4">
+                                                  <div class="row align-items-center">
+
+
+                                                    <!-- Text Section: reservation prompt and call-to-action -->
+                                                    <div class="col-12 col-md-7">
+
+
+                                                      <!-- Section label -->
+                                                      <span class="hint-title"><b>Booking</b></span>
+
+
+                                                      <!-- Main heading inviting users to book a time -->
+                                                      <h1 class="title">
+                                                        <b>Want to book a time?</b>
+                                                      </h1>
+
+
+                                                      <!-- Instructional text encouraging users to send a message -->
+                                                      <p>
+                                                        Send a message by clicking the button below<br>
+                                                        Book your date and time quickly and easily.
+                                                      </p>
+
+
+                                                      <!-- Reservation button -->
+                                                      <a class="btn btn-yellow mt-4">Make a reservation</a>
+                                                    </div>
+
+
+                                                      <!-- Image Section: displays reservation icon -->
+                                                <div class="col-12 col-md-5 mt-4 mt-md-0">
+                                                  <!-- Card container with centered image -->
+                                                  <div class="card-reserva d-flex justify-content-center">
+                                                    <!-- Responsive reservation icon image -->
+                                                    <img src="./img/icone-reserva.svg" alt="Reserva" class="img-fluid reserva-img">
+                                                  </div>
+                                                </div>
+
+                                        <!-- Closing tags for layout structure -->
+                                      </div>       <!-- Closes row -->
+                                      </div>       <!-- Closes container -->
+                                      </div>       <!-- Closes inner wrapper -->
+                                        </div>       <!-- Closes outer wrapper -->
+                                        </div>       <!-- Closes section content -->
+                                        </section>   <!-- Closes the entire section -->
+                                                
+                                            <!-- Footer section -->
+                                        <footer>
+                                          <div class="container">
+                                            <div class="row">
+
+                                              <!-- Left column: company logo -->
+                                              <div class="col-3 container-logo-footer">
+                                                <img class="logo-footer" src=".//img/logo.png">
+                                              </div>
+
+                                              <!-- Center column: copyright text -->
+                                              <div class="col-6 container-texto-footer">
+                                                <p class="mb-0">
+                                                  <b>Menu On-line</b> &copy; All rights reserved
+                                                </p>
+                                              </div>
+
+                                              <!-- Right column: social media icons -->
+                                              <div class="col-3 container-redes-footer">
+                                                <!-- Instagram button -->
+                                                <a class="btn btn-sm btn-white btn-social mr-3">
+                                                  <i class="fab fa-instagram"></i>
+                                                </a>
+                                                <!-- Facebook button -->
+                                                <a class="btn btn-sm btn-white btn-social mr-3">
+                                                  <i class="fab fa-facebook"></i>
+                                                </a>
+                                                <!-- WhatsApp button -->
+                                                <a class="btn btn-sm btn-white btn-social mr-3">
+                                                  <i class="fab fa-whatsapp"></i>
+                                                </a>
+                                              </div>
+
+                                            </div>
+                                          </div>
+                                        </footer>  <!--Closing Footer section -->
+
+
+                                            <!-- Fullscreen modal container for the shopping cart -->
+                                        <div class="modal-full hidden" id="modalCarrinho">
+
+                                          <!-- Modal Header: contains close button and progress steps -->
+                                          <div class="m-header">
+                                            <div class="container">
+                                              <!-- Close button aligned to the right -->
+                                              <a class="btn btn-white btn-sm float-right">Close</a>
+                                              
+                                              <!-- Placeholder for step indicators (e.g., checkout stages) -->
+                                              <div class="etapas"></div>
+                                            </div>
+                                          </div>
+
+                                          <!-- Modal Body: main content area (e.g., cart items) -->
+                                          <div class="m-body"></div>
+
+                                          <!-- Modal Footer: typically used for action buttons like "Checkout" -->
+                                          <div class="m-footer"></div>
+
+                                        </div>
+
+                                        </div> <!-- Closes the previously opened container or section -->
+
+                                        <!-- JavaScript dependencies for interactivity and compatibility -->
+                                        <script type="text/javascript" src="/js/jquery-1.12.4.min.js"></script>       <!-- jQuery library for DOM manipulation and events -->
+                                        <script type="text/javascript" src="/js/modernizr-3.5.0.min.js"></script>     <!-- Modernizr for feature detection in browsers -->
+                                        <script type="text/javascript" src="/js/bootstrap.min.js"></script>          <!-- Bootstrap JS for responsive components -->
+                                        <script type="text/javascript" src="/js/popper.min.js"></script>             <!-- Popper.js for tooltip and popover positioning -->
+
+                                        </body> <!-- Closes the body of the HTML document -->
+
+                                        </html> <!-- Closes the HTML document -->
+
  
