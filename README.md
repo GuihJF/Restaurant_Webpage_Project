@@ -1,6 +1,19 @@
-# 🍽️ Restaurant Webpage Project
+## 🍽️ Restaurant Webpage Project  
+A responsive and modern restaurant landing page built with HTML, CSS, JavaScript, and Bootstrap, developed as part of my portfolio to continuously strengthen my front-end development skills.
 
-A responsive and modern restaurant landing page built with HTML, CSS, JavaScript, and Bootstrap. Designed for clarity, accessibility, and professional presentation.
+This project showcases:
+
+- Skill consolidation through real-world layout and UI logic
+
+- Mobile-first responsiveness for seamless cross-device experience
+
+- Accessible design with clean structure and intuitive navigation
+
+- Modular, well-commented code for clarity and maintainability
+
+- Professional presentation aimed at global recruiter visibility  
+
+Created with a focus on clarity, scalability, and continuous improvement, each section reflects my commitment to writing readable, impactful code for international audiences.
 
 ---
 
